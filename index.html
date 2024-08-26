@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="title">Learn to code by watching others</div>
+
+      <div class="description">See how experienced developers solve problems in real-time. Watching scripted tutorials
+        is
+        great,
+        but understanding how developers think is invaluable.</div>
+    </div>
+
+    <div class="right">
+      <div class="price"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
+
+      <form id="signUp">
+        <div class="data">
+          <div class="input-group">
+            <input type="text" id="first-name" placeholder="First Name">
+            <span class="error-message "><em>First Name cannot be empty</em></span>
+            <span class="error-icon"><img src="./images/icon-error.svg"></span>
+          </div>
+          <div class="input-group">
+            <input type="text" id="last-name" placeholder="Last Name">
+            <span class="error-message"><em>Last Name cannot be empty</em></span>
+            <span class="error-icon"><img src="./images/icon-error.svg"></span>
+          </div>
+          <div class="input-group">
+            <input type="text" id="email" placeholder="Email Address">
+            <span class="error-message empty"><em>Email cannot be empty</em></span>
+            <span class="error-message invalid"><em>Looks like this is not an email</em></span>
+            <span class="error-icon"><img src="./images/icon-error.svg"></span>
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Password">
+            <span class="error-message"><em>Password cannot be empty</em></span>
+            <span class="error-icon"><img src="./images/icon-error.svg"></span>
+          </div>
+
+          <input type="submit" value="Claim your free trial">
+
+          <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/NatKacz99" target="_blank">NatKacz99</a>.
+    </p>
+  </footer>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

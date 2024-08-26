@@ -1,0 +1,193 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main{
+  font-size: 16px
+}
+
+body{
+  background: url("./images/bg-intro-desktop.png") no-repeat 0px 0px;
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 90px;
+  max-width: 1440px
+}
+
+.left{
+  color: white;
+  padding: 30px
+}
+
+.title{
+  font-size: 4rem;
+  font-weight: 700;
+  padding-top: 20px
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 60px;
+  padding: 80px
+}
+
+.description{
+  font-weight: 500;
+  text-align: justify;
+}
+
+.price{
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 7px 5px 0px rgba(86, 83, 83, 0.7);
+}
+
+.price span{
+  font-weight: 600;
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0px 7px 5px 0px rgba(86, 83, 83, 0.7);
+}
+
+input{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: hsl(246, 25%, 77%);
+  box-sizing: border-box;
+  width: 100%
+}
+
+input::placeholder{
+  font-weight: 600;
+}
+
+input[type="submit"]{
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: hsl(154, 59%, 51%);
+  box-shadow: inset 0px -5px 5px 0px #08321e30;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+input:focus{
+  outline: none;
+  border-bottom-color: black;
+  border-left-color: hsl(246, 25%, 77%);
+  border-right-color: hsl(246, 25%, 77%);
+  border-top-color: hsl(246, 25%, 77%);
+  border-width: 1.5px;
+}
+
+.right{
+  padding: 30px
+}
+
+.right p{
+  color: hsl(246, 25%, 77%);
+  text-align: center
+}
+
+.data p span{
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+@media (max-width: 375px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body{
+    padding: 0;
+    background: url("./images/bg-intro-mobile.png") no-repeat 0px 0px;
+    background-color: hsl(0, 100%, 74%);
+  }
+
+  .description{
+    text-align: center
+  }
+
+  .title{
+    text-align: justify;
+  }
+}
+
+.error-message {
+  display: none;
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input-group.error input {
+  border-color: hsl(0, 100%, 74%);
+  border-width: 3px;
+}
+
+.input-group.error .error-message {
+  display: block; 
+}
+
+.input-group{
+  position: relative;
+}
+
+.error-icon{
+  position: absolute;
+  right: 10px;
+  top: 10%;
+  display: none
+}
+
+.input-group.error .error-icon {
+  display: inline-block; 
+}
+
+.data p{
+  font-size: 0.75rem;
+}
+
+input[type="submit"]:hover{
+  opacity: 60%;
+  cursor: pointer;
+}
